@@ -51,19 +51,18 @@
                 </div>
             </div>
         </div>
-        <script>
-                function typeWriter(elemento) {
-                    const textoArray = elemento.innerText.split('');
-                    elemento.innerText = '';
-                    textoArray.forEach((letra, i) => {
-                    setTimeout(() => elemento.innerText += letra, 75 * i);
-                    });
-                }
-
-                const titulo = document.querySelector('#elementEl');
-                typeWriter(titulo);
-        </script>
     </main>
-    <div></div>
+    <script>
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerText.split('');
+            elemento.innerText = '';
+            textoArray.forEach((letra, i) => {
+            setTimeout(() => elemento.innerText += letra, 75 * i);
+            });
+        }
+
+        const titulo = document.querySelector('#elementEl');
+        typeWriter(titulo);
+    </script>
 </body>
 </html>
