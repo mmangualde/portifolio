@@ -26,6 +26,17 @@ nav a{
     font-size: 1.5em;
     font-weight: 800;
 }
+nav hr{
+    background-color: #FFE599;
+    height: 2px;
+    width: 1%;
+    visibility: hidden;
+    transition: 0.5s;
+}
+nav a:hover hr{
+    visibility: visible;
+    width: 100%;
+}
 main{
     width: 100%;
     background-color: #312E2E;
@@ -84,12 +95,14 @@ main h1{
     font-size: 1.1em;
     text-decoration: underline;
 }
-#habilidades{
-    height: 100vh;
+#habilidades, #projetos{
     display: flex;
     flex-direction: column;
 }
-#habilidades h2{
+#habilidades{
+    height: 90vh;
+}
+#habilidades h2, #projetos h2{
     color: #FFE599;
     font-size: 2.3rem;
     align-self: center;
@@ -99,6 +112,7 @@ main h1{
     align-self: center;
     align-items: center;
     justify-content: space-around;
+    margin-top: 7px;
 }
 #home{
     fill: white;
@@ -112,7 +126,7 @@ main h1{
 }
 #seta{
     fill: #FFE599;
-    width: 20px;
+    width: 17px;
     margin-left: 15px;
 }
 .pagina{
@@ -133,7 +147,8 @@ main h1{
     border-right:10px solid #FFE599;
     display:inline-block;
     padding-left: 27px;
-    padding-right: 10px;
+    padding-right: 4%;
+    padding-top: 4%;
 }
 .hardskills::after, .hardskills::before, .softskills::after, .softskills::before{
     content:"";
@@ -162,8 +177,10 @@ main h1{
 }
 .svg{
     display: flex;
-    margin-top: 80px;
-    margin-left: 20px;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .svg svg{
     fill: white;
@@ -172,9 +189,43 @@ main h1{
     transition: 0.5s;
     cursor: pointer;
 }
-#svgsoftskills{
-    margin-left: 26%;
-}
 .svg svg:hover{
     transform: scale(1.5);
+}
+#projetos{
+    padding-bottom: 10vh;
+}
+.gridProjetos{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 100%;
+    margin-top: 120px;
+    gap: 100px;
+}
+.display-flex, .display-grid, .delivery{
+    padding: 0px 100px 0px 100px;
+    position: relative;
+}
+.descricao{
+    border: solid 3px #000;
+    width: 600px;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 229, 153, 80%);
+    border-radius: 37px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.descricao p{
+    width: 250px;
+    text-align: center;
+}
+.display-grid{
+    display: flex;
+    justify-content: right;
 }
