@@ -124,7 +124,7 @@ main h1{
     display: grid;
     grid-template-columns: 10% 25% 30%;
     grid-template-rows: 400px;
-    margin-top: 30px;
+    margin-top: 120px;
     gap: 200px;
 }
 .hardskills, .softskills{
@@ -159,4 +159,22 @@ main h1{
     line-height: 1.5;
     font-size: 1.1rem;
     text-align: justify;
+}
+.svg{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 20px;
+}
+.svg svg{
+    fill: white;
+    height: 120px;
+    margin-left: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#svgsoftskills{
+    margin-left: 26%;
+}
+.svg svg:hover{
+    transform: scale(1.5);
 }
