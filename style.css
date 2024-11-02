@@ -379,21 +379,24 @@ footer svg{
         width: 70px;
     }
     #apresentacao{
-        width: 100%;
         padding-top: 150px;
+        padding-left: 100px;
     }
     main h1{
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
     .contato button{
-        font-size: 1em;
+        font-size: 0.8em;
     }
     .email{
-        font-size: 1em;
+        font-size: 0.8em;
     }
     #dark-mode{
         font-size: 0.8em;
-        left: 7px;
+        left: 15px;
+        top: 10px;
+        height: 60px;
+        width: 60px;
     }
     #habilidades h2, #projetos h2, #contato h2{
         font-size: 1.3em;
@@ -420,8 +423,12 @@ footer svg{
     .gridskills{
         gap: 80px;
     }
-    .hardskills, .softskills{
+    .hardskills , .softskills{
         height: 35vh;
+        width: 95%;
+    }
+    .hardskills p, .softskills p{
+        font-size: 0.8em;
     }
     .svg svg{
         height: 80px;
@@ -436,6 +443,9 @@ footer svg{
     .gridProjetos img{
         width: 350px;
     }
+    .display-flex, .display-grid, .delivery{
+        padding: 0;
+    }
     .descricao{
         width: 300px;
         top: 230px;
@@ -444,11 +454,11 @@ footer svg{
         margin-top: 160px;
     }
     #name, #email{
-        width: 210px;
+        width: 185px;
         font-size: 1em;
     }
     #mensagem{
-        width: 450px;
+        width: 400px;
         font-size: 1em;
     }
     .redescontato{
