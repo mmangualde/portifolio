@@ -348,7 +348,7 @@ footer svg{
     height: 25px;
     fill: #FFE599;
 }
-@media (max-width: 900px){
+@media (max-width: 768px){
     *{
         box-sizing: border-box;
     }
@@ -368,6 +368,9 @@ footer svg{
     nav li{
         padding: 20px;
     }
+    nav a{
+        font-size: 1em;
+    }
     #hide{
         display: block;
     }
@@ -376,11 +379,14 @@ footer svg{
         height: 11vh;
     }
     header img{
-        width: 70px;
+        height: 50px;
+    }
+    header svg{
+        height: 40px;
     }
     #apresentacao{
         padding-top: 150px;
-        padding-left: 100px;
+        padding-left: 50px;
     }
     main h1{
         font-size: 1.4em;
@@ -393,10 +399,10 @@ footer svg{
     }
     #dark-mode{
         font-size: 0.8em;
-        left: 15px;
-        top: 10px;
-        height: 60px;
-        width: 60px;
+        left: 7px;
+        top: 18px;
+        height: 50px;
+        width: 55px;
     }
     #habilidades h2, #projetos h2, #contato h2{
         font-size: 1.3em;
@@ -424,6 +430,7 @@ footer svg{
         gap: 80px;
     }
     .hardskills , .softskills{
+        align-self: center;
         height: 35vh;
         width: 95%;
     }
@@ -454,16 +461,26 @@ footer svg{
         margin-top: 160px;
     }
     #name, #email{
-        width: 185px;
+        width: 150px;
         font-size: 1em;
     }
     #mensagem{
-        width: 400px;
+        width: 330px;
         font-size: 1em;
     }
     .redescontato{
         margin-top: 200px;
         margin-bottom: 30px;
+    }
+    footer div{
+        width: 90px;
+        right: 40px;
+    }
+    footer svg{
+        height: 20px;
+    }
+    footer img{
+        height: 50px;
     }
 }
 #altdark {
