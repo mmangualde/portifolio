@@ -37,7 +37,7 @@ nav a:hover hr{
     visibility: visible;
     width: 100%;
 }
-.hide{
+#hide{
     display: none;
     width: 60px;
     fill: #FFE599;
@@ -357,7 +357,7 @@ footer svg{
         position: absolute;
         top: 85px;
         right: 45px;
-        background-color: black;
+        background-color: #252020;
     }
     nav ul{
         flex-direction: column;
@@ -365,7 +365,7 @@ footer svg{
     nav li{
         padding: 20px;
     }
-    .hide{
+    #hide{
         display: block;
     }
     header{
