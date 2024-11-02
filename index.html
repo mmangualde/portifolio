@@ -248,7 +248,7 @@ document.addEventListener("DOMContentLoaded", function () {
              localStorage.setItem('theme', currentTheme);
             });
 
-            const savedTheme = localStorage.getItem('dark');
+            const savedTheme = localStorage.getItem('theme');
             if (savedTheme) {
               mainElement.classList.add(savedTheme);
                 footerElement.classList.add(savedTheme);
