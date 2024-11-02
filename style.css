@@ -349,6 +349,9 @@ footer svg{
     fill: #FFE599;
 }
 @media (max-width: 900px){
+    *{
+        box-sizing: border-box;
+    }
     body{
         background-color: #312E2E;
     }
@@ -378,10 +381,9 @@ footer svg{
     #apresentacao{
         width: 100%;
         padding-top: 150px;
-        padding-left: 32%;
     }
     main h1{
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
     .contato button{
         font-size: 1em;
@@ -391,6 +393,67 @@ footer svg{
     }
     #dark-mode{
         font-size: 0.8em;
+        left: 7px;
+    }
+    #habilidades h2, #projetos h2, #contato h2{
+        font-size: 1.3em;
+    }
+    #home{
+        width: 15px;
+    }
+    .inicio{
+        margin-left: 7px;
+        font-size: 1.3em;
+    }
+    #seta{
+        height: 15px;
+        margin-left: 15px;
+    }
+    .pagina{
+        margin-left: 7px;
+        font-size: 1.3em;
+    }
+    .gridskills, .gridProjetos, .gridcontact{
+        display: flex;
+        flex-direction: column;
+    }
+    .gridskills{
+        gap: 80px;
+    }
+    .hardskills, .softskills{
+        height: 35vh;
+    }
+    .svg svg{
+        height: 80px;
+    }
+    #projetos{
+        margin-top: 180px;   
+    }
+    .gridProjetos{
+        gap: 180px;
+        align-items: center;
+    }
+    .gridProjetos img{
+        width: 350px;
+    }
+    .descricao{
+        width: 300px;
+        top: 230px;
+    }
+    #contato{
+        margin-top: 160px;
+    }
+    #name, #email{
+        width: 210px;
+        font-size: 1em;
+    }
+    #mensagem{
+        width: 450px;
+        font-size: 1em;
+    }
+    .redescontato{
+        margin-top: 200px;
+        margin-bottom: 30px;
     }
 }
 #altdark {
