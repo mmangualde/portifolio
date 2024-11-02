@@ -95,14 +95,14 @@ main h1{
     font-size: 1.1em;
     text-decoration: underline;
 }
-#habilidades, #projetos{
+#habilidades, #projetos, #contato{
     display: flex;
     flex-direction: column;
 }
 #habilidades{
     height: 90vh;
 }
-#habilidades h2, #projetos h2{
+#habilidades h2, #projetos h2, #contato h2{
     color: #FFE599;
     font-size: 2.3rem;
     align-self: center;
@@ -228,4 +228,115 @@ main h1{
 .display-grid{
     display: flex;
     justify-content: right;
+}
+.gridcontact{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 600px;
+    gap: 50px;
+    margin: 120px 4% 0px 10%;
+}
+.formulario{
+    grid-column: 1;
+    position: relative;
+}
+.redescontato{
+    grid-column: 2;
+    grid-row: 1;
+}
+.name-mail{
+    display: flex;
+}
+#name, #email{
+    color: #FFE599;
+    background: none;
+    border: none;
+    border-bottom: solid 1px #FFE599;
+    outline: none;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 350px;
+}
+#name::placeholder, #email::placeholder, #mensagem::placeholder{
+    color: #FFE599;
+    font-weight: 800;
+}
+#email{
+    margin-left: 30px;
+}
+#mensagem{
+    color: #FFE599;
+    background: none;
+    border: none;
+    border-bottom: solid 1px #FFE599;
+    outline: none;
+    padding-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 50px;
+    resize: none;
+    width: 730px;
+    height: 300px;
+}
+#enviar{
+    background: none;
+    border: solid 1px #FFE599;
+    color: #FFE599;
+    font-weight: 800;
+    border-radius: 20px;
+    padding: 10px 12px;
+    cursor: pointer;
+    position: absolute;
+    top: 450px;
+    left: 0;
+    font-size: 1.1rem;
+}
+.redescontato h3, .redescontato h4{ 
+    color: #FFE599;
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+.redescontato h4{
+    margin-top: 50px;
+}
+.redescontato p{
+    color: #FFFFFF;
+    margin-top: 20px;   
+}
+.redescontato div{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 10px;
+}
+.redescontato a{
+    color: #FFFFFF;
+}
+.redescontato svg{
+    fill: white;
+    width: 20px;
+}
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: #2c2929;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+footer img{
+    position: absolute;
+    left: 19%;
+}
+footer div{
+    display: flex;
+    justify-content: space-around;
+    width: 7%;
+    position: absolute;
+    right: 19%;
+}
+footer svg{
+    height: 25px;
+    fill: #FFE599;
 }
