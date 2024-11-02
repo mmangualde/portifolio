@@ -11,7 +11,8 @@
     <title>Portifolio</title>
 </head>
 <body>
-    <header>
+    <header id="altdark02">
+        <button id="dark-mode">Mudar Tema</button>
         <img src="logoportifolio.png" alt="">
         <nav id="container">
             <ul>
@@ -23,7 +24,7 @@
         </nav>
         <button id="hide"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></button>
     </header>
-    <main>
+    <main id="altdark">
         <div id="apresentacao">
             <h1 id="elementEl">Olá,
                 <br>Sou o Matheus Mangualde
@@ -126,7 +127,7 @@
             </div> 
         </div>
     </main>
-    <footer>
+    <footer id="altdark03">
         <img src="logoportifolio.png" alt="">
         <div>
             <a href="https://www.facebook.com/profile.php?id=100012620475851" target="_blank">
@@ -221,6 +222,40 @@ document.addEventListener("DOMContentLoaded", function () {
              }
     
             });
+
+
+            const toggleButton = document.getElementById('dark-mode');
+            const mainElement = document.querySelector('#altdark');
+            const footerElement = document.querySelector('#altdark02');
+            const headerElement = document.querySelector('#altdark03');
+
+            toggleButton.addEventListener('click', () => {
+              mainElement.classList.toggle('dark');
+              mainElement.classList.toggle('light');
+
+             footerElement.classList.toggle('dark');
+             footerElement.classList.toggle('light');
+
+                headerElement.classList.toggle('dark');
+              headerElement.classList.toggle('light');
+
+              // Alterna classes no body
+             document.body.classList.toggle('dark');
+             document.body.classList.toggle('light');
+
+             // Salvar a preferência do tema no localStorage
+                const currentTheme = mainElement.classList.contains('dark') ? 'dark' : 'light';
+             localStorage.setItem('theme', currentTheme);
+            });
+
+            // Carregar o tema preferido do localStorage ao iniciar
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+              mainElement.classList.add(savedTheme);
+                footerElement.classList.add(savedTheme);
+             headerElement.classList.add(savedTheme);
+             document.body.classList.add(savedTheme); // Corrigido para usar document.body
+            }
     </script>
 </body>
 </html>
